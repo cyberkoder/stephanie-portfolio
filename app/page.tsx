@@ -313,13 +313,13 @@ export default function Home() {
 
           <div className="flex flex-col gap-6 animate-fade-up delay-300">
             {/* Profile photo */}
-            <div className="relative mx-auto lg:mx-0 w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-stone-200 shadow-xl">
+            <div className="relative mx-auto lg:mx-0 w-64 h-80 lg:w-80 lg:h-96 rounded-2xl overflow-hidden border border-stone-200 shadow-xl">
               <Image
-                src="/stephanie.jpg"
+                src="/stephanie-hero.png"
                 alt="Stephanie Leonenko"
                 fill
                 sizes="(max-width: 1024px) 256px, 320px"
-                className="object-cover object-top"
+                className="object-cover object-center"
                 priority
               />
               {/* subtle vignette */}

@@ -17,6 +17,9 @@ import {
   Menu,
   X,
   ExternalLink,
+  Activity,
+  Stethoscope,
+  ClipboardList,
 } from "lucide-react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -31,32 +34,31 @@ const NAV_LINKS = [
 
 const STATS = [
   { value: "10+", label: "Years of Experience" },
-  { value: "NY", label: "State Certified CNA" },
-  { value: "BS", label: "Healthcare Administration" },
-  { value: "100s", label: "Patients Served" },
+  { value: "3", label: "Active Certifications" },
+  { value: "ED", label: "Emergency Department" },
+  { value: "Epic", label: "EMR Proficiency" },
 ];
 
 const CREDENTIALS = [
   {
     icon: Shield,
-    title: "Certified Nursing Assistant (CNA)",
+    title: "NYS Certified Nursing Assistant (CNA)",
     issuer: "New York State Department of Health",
-    detail: "Active New York State CNA Certification",
+    detail: "Active / Current - New York State CNA License",
     color: "teal",
   },
   {
-    icon: GraduationCap,
-    title: "Bachelor of Science - Healthcare Administration",
-    issuer: "University",
-    detail: "Comprehensive training in healthcare systems, policy, and operations",
+    icon: Stethoscope,
+    title: "NYS Patient Care Technician (PCT)",
+    issuer: "New York State",
+    detail: "Active / Current - Patient Care Technician License",
     color: "blue",
-    placeholder: true,
   },
   {
-    icon: Award,
-    title: "CPR / BLS Certified",
+    icon: Activity,
+    title: "AHA Basic Life Support (BLS)",
     issuer: "American Heart Association",
-    detail: "Basic Life Support for Healthcare Providers",
+    detail: "Active / Current - BLS for Healthcare Providers",
     color: "rose",
   },
 ];
@@ -66,82 +68,102 @@ const SKILLS = [
     category: "Patient Care",
     icon: Heart,
     items: [
-      "Activities of Daily Living (ADLs)",
+      "Triage & Trauma Care Support",
       "Vital Signs Monitoring",
-      "Patient Positioning & Mobility",
-      "Personal Hygiene & Grooming",
-      "Nutrition & Feeding Assistance",
-      "Catheter & Wound Care Support",
+      "EKG Performance",
+      "Wound Care & Dressing",
+      "Activities of Daily Living (ADLs)",
+      "Patient Comfort & Safety",
     ],
   },
   {
     category: "Clinical Skills",
     icon: Shield,
     items: [
-      "EHR / EMR Documentation",
-      "Infection Control & Prevention",
-      "HIPAA Compliance",
-      "Specimen Collection",
-      "Patient Safety Protocols",
-      "Emergency Response (CPR/BLS)",
+      "Epic EMR Documentation",
+      "Bladder Scan Operation",
+      "Pulse Oximeter Placement",
+      "Seizure Activity Monitoring",
+      "Bolus Feeding Administration",
+      "Infection Control Protocols",
     ],
   },
   {
-    category: "Administration",
-    icon: Briefcase,
+    category: "Professional",
+    icon: ClipboardList,
     items: [
-      "Healthcare Policy & Compliance",
-      "Staff Coordination",
-      "Patient Advocacy",
-      "Care Planning Support",
-      "Quality Improvement",
-      "Interdisciplinary Collaboration",
+      "High-Pressure Environment Composure",
+      "Interdisciplinary Team Collaboration",
+      "Patient & Family Communication",
+      "Accurate Medical Documentation",
+      "Pediatric Patient Care",
+      "Emergency Department Workflow",
     ],
   },
 ];
 
 const EXPERIENCE = [
   {
-    role: "Certified Nursing Assistant",
-    employer: "[Employer - add from resume]",
-    location: "New York",
-    period: "[Start Date] - Present",
+    role: "Certified Nurse's Assistant - Emergency Department",
+    employer: "Northwell Health - Huntington Hospital",
+    location: "Commack, NY",
+    period: "2023 - Present",
     highlights: [
-      "Provided compassionate direct patient care for [X] residents in a [long-term care / acute / memory care] setting",
-      "Monitored and recorded vital signs, reporting abnormalities to nursing staff",
-      "Assisted patients with ADLs including bathing, dressing, grooming, and ambulation",
-      "Maintained accurate documentation in electronic health records",
-      "Collaborated with interdisciplinary care team to implement individualized care plans",
+      "Provided essential support to the healthcare team in a fast-paced emergency department, triaging patients and assisting with trauma care",
+      "Monitored vital signs and ensured patient comfort during critical moments, maintaining a calm demeanor in high-pressure situations",
+      "Performed EKGs to monitor heart activity and assist in diagnosing potential cardiac issues",
+      "Collaborated closely with nurses and physicians to maintain seamless department workflow where every second counts",
     ],
-    placeholder: true,
+  },
+  {
+    role: "Certified Nurse's Assistant - Medical/Surgical Department",
+    employer: "Northwell Health - Plainview Hospital",
+    location: "Plainview, NY",
+    period: "Mar 2019 - 2023",
+    highlights: [
+      "Assisted patients with daily activities and personal hygiene, maintaining dignity and comfort across the medical/surgical unit",
+      "Monitored and recorded vital signs, collaborating with the healthcare team to ensure patient safety and comfort",
+      "Performed wound care including cleaning and dressing wounds, monitoring healing progress, and reporting concerns to nursing staff",
+      "Provided compassionate emotional support to patients and their families during difficult healthcare experiences",
+    ],
+  },
+  {
+    role: "Certified Nurse Assistant - Level 2",
+    employer: "Providence Health - Centre For Medically Fragile Children",
+    location: "New York",
+    period: "Jan 2018 - Oct 2018",
+    highlights: [
+      "Proficiently used Epic EMR to document children's medical histories, vitals, and clinical notes with accuracy",
+      "Maintained patients' physical and mental well-being through attentive, compassionate pediatric care",
+      "Recorded seizure activities, conducted bladder scans, administered bolus feedings, and placed pulse oximeters",
+      "Built trust with young patients and families, fostering healing and hope in a specialized care environment",
+    ],
   },
 ];
 
 const EDUCATION = [
   {
-    degree: "Bachelor of Science in Healthcare Administration",
-    school: "[University Name]",
-    year: "[Graduation Year]",
-    detail: "Coursework in healthcare systems, policy, finance, and organizational management",
-    placeholder: true,
+    degree: "Bachelor of Science - Healthcare Administration",
+    school: "University",
+    year: "In Progress",
+    detail: "Comprehensive study of healthcare systems, policy, finance, and organizational management",
   },
   {
-    degree: "Certified Nursing Assistant Program",
-    school: "[CNA Training Program / School]",
-    year: "[Year]",
-    detail: "New York State approved CNA training program - clinical and classroom instruction",
-    placeholder: true,
+    degree: "NYS High School Diploma",
+    school: "New York State",
+    year: "June 2012",
+    detail: "Graduated June 2012",
   },
 ];
 
 const CORE_VALUES = [
-  { icon: Heart, label: "Compassion", desc: "Every patient deserves dignity and genuine care." },
-  { icon: Shield, label: "Integrity", desc: "Honest, ethical practice in every interaction." },
-  { icon: Users, label: "Teamwork", desc: "Healthcare is a team effort - I show up for mine." },
-  { icon: Star, label: "Excellence", desc: "Continuous learning and commitment to best practices." },
+  { icon: Heart, label: "Compassion", desc: "Every patient deserves dignity and genuine, attentive care." },
+  { icon: Shield, label: "Integrity", desc: "Honest, ethical practice in every clinical interaction." },
+  { icon: Users, label: "Teamwork", desc: "Healthcare is a team effort - I show up for my colleagues." },
+  { icon: Star, label: "Excellence", desc: "High standards, accurate documentation, continuous growth." },
 ];
 
-// ─── Components ───────────────────────────────────────────────────────────────
+// ─── Navbar ───────────────────────────────────────────────────────────────────
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -149,7 +171,6 @@ function Navbar() {
   return (
     <nav className="fixed top-0 inset-x-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/60">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-teal-700 flex items-center justify-center">
             <span className="text-white text-sm font-semibold">SL</span>
@@ -157,7 +178,6 @@ function Navbar() {
           <span className="font-medium text-stone-800 tracking-tight">Stephanie Leonenko</span>
         </a>
 
-        {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
             <a
@@ -176,7 +196,6 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden text-stone-500"
           onClick={() => setOpen(!open)}
@@ -186,7 +205,6 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t border-stone-200 bg-stone-50 px-6 py-4 flex flex-col gap-4">
           {NAV_LINKS.map((link) => (
@@ -222,7 +240,6 @@ export default function Home() {
       {/* ── Hero ── */}
       <section className="min-h-screen flex flex-col justify-center pt-16 bg-gradient-to-br from-stone-50 via-teal-50/30 to-stone-100">
         <div className="max-w-6xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
-          {/* Text */}
           <div>
             <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 text-teal-800 text-xs font-mono px-3 py-1.5 rounded-full mb-6 animate-fade-up">
               <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
@@ -235,8 +252,8 @@ export default function Home() {
               <span className="text-teal-700 font-normal">Leonenko</span>
             </h1>
 
-            <p className="text-lg text-stone-500 font-medium mb-2 animate-fade-up delay-200">
-              Certified Nursing Assistant - BS Healthcare Administration
+            <p className="text-lg text-stone-600 font-medium mb-2 animate-fade-up delay-200">
+              Certified Nursing Assistant - Patient Care Technician
             </p>
             <p className="text-sm text-stone-400 mb-8 flex items-center gap-1.5 animate-fade-up delay-200">
               <MapPin className="w-3.5 h-3.5" /> Commack, New York
@@ -244,10 +261,10 @@ export default function Home() {
 
             <p className="text-base text-stone-600 leading-relaxed mb-10 max-w-lg animate-fade-up delay-300">
               A dedicated healthcare professional with over 10 years of hands-on patient
-              care experience, grounded in compassion, clinical precision, and a deep
-              commitment to improving patient outcomes. Combining frontline CNA expertise
-              with a Bachelor of Science in Healthcare Administration to bridge the gap
-              between bedside care and healthcare operations.
+              care experience across emergency, medical/surgical, and pediatric settings.
+              Known for compassionate, dignified care, accurate Epic EMR documentation,
+              and calm performance in high-pressure environments. Holding active NYS CNA,
+              PCT, and AHA BLS certifications.
             </p>
 
             <div className="flex flex-wrap gap-3 animate-fade-up delay-400">
@@ -268,9 +285,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Stats + photo placeholder */}
           <div className="flex flex-col gap-6 animate-fade-up delay-300">
-            {/* Photo */}
+            {/* Photo placeholder - replace with real photo */}
             <div className="relative mx-auto lg:mx-0 w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-stone-200 shadow-xl bg-gradient-to-br from-teal-100 to-stone-200 flex items-center justify-center">
               <div className="text-center text-stone-400">
                 <div className="w-20 h-20 rounded-full bg-stone-300 mx-auto mb-3 flex items-center justify-center">
@@ -280,7 +296,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 gap-4">
               {STATS.map((stat) => (
                 <div
@@ -303,25 +318,26 @@ export default function Home() {
             <div>
               <p className="text-xs font-mono text-teal-600 tracking-widest uppercase mb-3">About Me</p>
               <h2 className="text-3xl md:text-4xl font-light text-stone-900 mb-6">
-                Patient-centered care,<br />backed by education
+                Patient-centered care<br />across every setting
               </h2>
               <div className="space-y-4 text-stone-600 leading-relaxed">
                 <p>
-                  I have spent over a decade working directly with patients across diverse healthcare
-                  settings, providing compassionate, dignified care that prioritizes the whole person -
-                  not just the condition. My CNA certification and hands-on experience are the
-                  foundation of everything I do.
+                  I am a dedicated and experienced Certified Nursing Assistant with over 10 years
+                  of experience seeking to advance my career as a medical assistant. Throughout
+                  my career, I have demonstrated a commitment to providing compassionate care to
+                  patients in diverse healthcare settings.
                 </p>
                 <p>
-                  My Bachelor of Science in Healthcare Administration has deepened my understanding
-                  of how healthcare systems work - from regulatory compliance and quality improvement
-                  to care coordination and organizational management. I bring both the clinical and
-                  the operational perspective to every role I take on.
+                  Proficient in utilizing electronic medical record systems such as Epic, I
+                  prioritize accurate documentation and seamless patient care delivery. My
+                  experience spans emergency departments, medical/surgical floors, and specialized
+                  pediatric care for medically fragile children.
                 </p>
                 <p>
-                  I am passionate about bridging the gap between frontline care teams and
-                  administrative leadership, ensuring that policy decisions are grounded in
-                  real patient needs and that every care environment runs with efficiency and empathy.
+                  My strong communication skills, attention to detail, and unwavering dedication
+                  to delivering high-quality care have enabled me to make a positive impact on
+                  the lives of those I serve - from trauma patients in the ED to the youngest,
+                  most vulnerable patients in pediatric care.
                 </p>
               </div>
             </div>
@@ -353,39 +369,38 @@ export default function Home() {
           <div className="text-center mb-16">
             <p className="text-xs font-mono text-teal-600 tracking-widest uppercase mb-3">Credentials</p>
             <h2 className="text-3xl md:text-4xl font-light text-stone-900">
-              Certifications & Qualifications
+              Licenses & Certifications
             </h2>
+            <p className="text-stone-400 text-sm mt-2">All certifications Active / Current</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {CREDENTIALS.map((cred) => {
               const Icon = cred.icon;
-              const colorMap: Record<string, string> = {
-                teal: "bg-teal-50 border-teal-200 text-teal-700",
-                blue: "bg-blue-50 border-blue-200 text-blue-700",
-                rose: "bg-rose-50 border-rose-200 text-rose-700",
-              };
               const iconBg: Record<string, string> = {
                 teal: "bg-teal-100 border-teal-200 text-teal-700",
                 blue: "bg-blue-100 border-blue-200 text-blue-700",
                 rose: "bg-rose-100 border-rose-200 text-rose-700",
               };
+              const badgeBg: Record<string, string> = {
+                teal: "bg-teal-50 text-teal-700 border-teal-200",
+                blue: "bg-blue-50 text-blue-700 border-blue-200",
+                rose: "bg-rose-50 text-rose-700 border-rose-200",
+              };
               return (
                 <div
                   key={cred.title}
-                  className="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden"
+                  className="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
                 >
-                  {cred.placeholder && (
-                    <div className="absolute top-3 right-3 text-xs font-mono text-amber-500 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">
-                      update from resume
-                    </div>
-                  )}
                   <div className={`w-10 h-10 rounded-xl border flex items-center justify-center mb-4 ${iconBg[cred.color]}`}>
                     <Icon className="w-5 h-5" />
                   </div>
                   <h3 className="text-sm font-semibold text-stone-800 mb-1 leading-snug">{cred.title}</h3>
                   <p className="text-xs text-stone-400 font-mono mb-3">{cred.issuer}</p>
-                  <p className="text-xs text-stone-500 leading-relaxed">{cred.detail}</p>
+                  <span className={`inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full border ${badgeBg[cred.color]}`}>
+                    <div className="w-1 h-1 rounded-full bg-current animate-pulse" />
+                    {cred.detail}
+                  </span>
                 </div>
               );
             })}
@@ -426,49 +441,48 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-light text-stone-900">
               Professional History
             </h2>
-            <p className="text-stone-400 text-sm mt-2 font-mono">10+ years in patient care</p>
+            <p className="text-stone-400 text-sm mt-2 font-mono">10+ years across ED, Med/Surg, and Pediatric settings</p>
           </div>
 
-          <div className="space-y-6">
-            {EXPERIENCE.map((job, i) => (
-              <div
-                key={i}
-                className="relative bg-stone-50 border border-stone-200 rounded-2xl p-8 hover:border-teal-200 transition-colors"
-              >
-                {job.placeholder && (
-                  <div className="absolute top-4 right-4 text-xs font-mono text-amber-500 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">
-                    fill from resume
+          {/* Timeline */}
+          <div className="relative">
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-stone-100 hidden md:block" />
+
+            <div className="space-y-8">
+              {EXPERIENCE.map((job, i) => (
+                <div key={i} className="relative md:pl-16">
+                  {/* Timeline dot */}
+                  <div className="hidden md:flex absolute left-0 top-6 w-10 h-10 rounded-full bg-white border-2 border-teal-200 items-center justify-center shadow-sm">
+                    <Briefcase className="w-4 h-4 text-teal-600" />
                   </div>
-                )}
-                <div className="flex flex-wrap items-start gap-4 mb-5">
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-base font-semibold text-stone-800">{job.role}</h3>
-                    <p className="text-sm text-teal-700 font-medium">{job.employer}</p>
-                    <div className="flex items-center gap-3 mt-1">
-                      <span className="text-xs text-stone-400 font-mono">{job.period}</span>
-                      <span className="text-xs text-stone-400 flex items-center gap-1">
-                        <MapPin className="w-3 h-3" /> {job.location}
-                      </span>
+
+                  <div className="bg-stone-50 border border-stone-200 rounded-2xl p-8 hover:border-teal-200 transition-colors">
+                    <div className="flex flex-wrap items-start gap-3 mb-5">
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base font-semibold text-stone-800">{job.role}</h3>
+                        <p className="text-sm text-teal-700 font-semibold mt-0.5">{job.employer}</p>
+                        <div className="flex flex-wrap items-center gap-3 mt-1.5">
+                          <span className="inline-flex items-center gap-1 text-xs text-stone-400 font-mono">
+                            <MapPin className="w-3 h-3" /> {job.location}
+                          </span>
+                          <span className="inline-flex items-center gap-1 text-xs bg-teal-50 text-teal-700 border border-teal-200 px-2 py-0.5 rounded-full font-medium">
+                            {i === 0 && <div className="w-1 h-1 rounded-full bg-teal-500 animate-pulse" />}
+                            {job.period}
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center">
-                    <Briefcase className="w-4 h-4 text-teal-700" />
+                    <ul className="space-y-2.5">
+                      {job.highlights.map((highlight, j) => (
+                        <li key={j} className="flex items-start gap-3 text-sm text-stone-600">
+                          <div className="w-1.5 h-1.5 rounded-full bg-teal-400 mt-2 flex-shrink-0" />
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
-                <ul className="space-y-2">
-                  {job.highlights.map((highlight, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm text-stone-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-teal-400 mt-2 flex-shrink-0" />
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-
-            <div className="border-2 border-dashed border-stone-200 rounded-2xl p-8 text-center text-stone-400">
-              <BookOpen className="w-6 h-6 mx-auto mb-2 opacity-40" />
-              <p className="text-sm font-mono">Additional roles will be added from resume</p>
+              ))}
             </div>
           </div>
         </div>
@@ -488,13 +502,8 @@ export default function Home() {
             {EDUCATION.map((edu, i) => (
               <div
                 key={i}
-                className="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm relative"
+                className="bg-white border border-stone-200 rounded-2xl p-6 shadow-sm"
               >
-                {edu.placeholder && (
-                  <div className="absolute top-4 right-4 text-xs font-mono text-amber-500 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full">
-                    update from resume
-                  </div>
-                )}
                 <div className="w-10 h-10 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center mb-4">
                   <GraduationCap className="w-5 h-5 text-teal-700" />
                 </div>
@@ -517,8 +526,8 @@ export default function Home() {
               Let&apos;s Connect
             </h2>
             <p className="text-stone-500 text-sm leading-relaxed mb-10">
-              Whether you&apos;re looking for a dedicated CNA for your team or interested in
-              collaborating on healthcare administration initiatives, I&apos;d love to hear from you.
+              Looking for a compassionate, experienced CNA or PCT for your team?
+              I&apos;d love to hear from you.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -530,20 +539,18 @@ export default function Home() {
                 stephanie@leonenko.me
               </a>
               <a
-                href="https://linkedin.com/in/stephanie-leonenko"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+13479751512"
                 className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-stone-50 transition-colors"
               >
-                <ExternalLink className="w-4 h-4" />
-                LinkedIn Profile
+                <Phone className="w-4 h-4" />
+                +1 (347) 975-1512
               </a>
             </div>
 
             <div className="border border-stone-100 rounded-2xl p-6 bg-stone-50 text-left grid sm:grid-cols-2 gap-4">
               <div>
                 <p className="text-xs font-mono text-stone-400 mb-1">Location</p>
-                <p className="text-sm text-stone-700">Commack, New York</p>
+                <p className="text-sm text-stone-700">Commack, New York 11725</p>
               </div>
               <div>
                 <p className="text-xs font-mono text-stone-400 mb-1">Status</p>
@@ -553,12 +560,12 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <p className="text-xs font-mono text-stone-400 mb-1">Certification</p>
-                <p className="text-sm text-stone-700">NY State CNA - Active</p>
+                <p className="text-xs font-mono text-stone-400 mb-1">Certifications</p>
+                <p className="text-sm text-stone-700">NYS CNA, NYS PCT, AHA BLS - Active</p>
               </div>
               <div>
-                <p className="text-xs font-mono text-stone-400 mb-1">Education</p>
-                <p className="text-sm text-stone-700">BS Healthcare Administration</p>
+                <p className="text-xs font-mono text-stone-400 mb-1">EMR Systems</p>
+                <p className="text-sm text-stone-700">Epic (Proficient)</p>
               </div>
             </div>
           </div>
@@ -575,7 +582,7 @@ export default function Home() {
             <span className="text-sm text-stone-500">Stephanie Leonenko</span>
           </div>
           <p className="text-xs text-stone-400 font-mono">
-            CNA - BS Healthcare Administration - Commack, NY
+            NYS CNA - NYS PCT - AHA BLS - Commack, NY
           </p>
           <p className="text-xs text-stone-400">
             &copy; {new Date().getFullYear()} Stephanie Leonenko

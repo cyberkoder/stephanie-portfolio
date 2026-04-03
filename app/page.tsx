@@ -181,11 +181,8 @@ function Navbar() {
   return (
     <nav className="fixed top-0 inset-x-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/60">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-teal-700 flex items-center justify-center">
-            <span className="text-white text-sm font-semibold">SL</span>
-          </div>
-          <span className="font-medium text-stone-800 tracking-tight">Stephanie Leonenko</span>
+        <a href="#" className="font-medium text-stone-800 tracking-tight hover:text-teal-700 transition-colors">
+          Stephanie Leonenko
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -591,9 +588,6 @@ export default function Home() {
       <footer className="border-t border-stone-200 bg-stone-50 py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-teal-700 flex items-center justify-center">
-              <span className="text-white text-xs font-semibold">SL</span>
-            </div>
             <span className="text-sm text-stone-500">Stephanie Leonenko</span>
           </div>
           <p className="text-xs text-stone-400 font-mono">

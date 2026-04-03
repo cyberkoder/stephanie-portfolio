@@ -264,10 +264,12 @@ export default function Home() {
       <Navbar />
 
       {/* ── Hero ── */}
-      <section className="min-h-screen flex flex-col justify-center pt-16 bg-gradient-to-br from-stone-50 via-teal-50/30 to-stone-100">
-        <div className="max-w-6xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 text-teal-800 text-xs font-mono px-3 py-1.5 rounded-full mb-6 animate-fade-up">
+      <section className="min-h-screen flex flex-col justify-center pt-16 bg-gradient-to-br from-stone-50 via-teal-50/30 to-stone-100 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch min-h-[calc(100vh-4rem)]">
+
+          {/* Left: text + stats */}
+          <div className="flex flex-col justify-center py-8">
+            <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 text-teal-800 text-xs font-mono px-3 py-1.5 rounded-full mb-6 animate-fade-up w-fit">
               <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
               Available for Opportunities
             </div>
@@ -285,7 +287,7 @@ export default function Home() {
               <MapPin className="w-3.5 h-3.5" /> Commack, New York
             </p>
 
-            <p className="text-base text-stone-600 leading-relaxed mb-10 max-w-lg animate-fade-up delay-300">
+            <p className="text-base text-stone-600 leading-relaxed mb-8 max-w-lg animate-fade-up delay-300">
               A dedicated healthcare professional with over 10 years of hands-on patient
               care experience across emergency, medical/surgical, and pediatric settings.
               Known for compassionate, dignified care, accurate Epic EMR documentation,
@@ -293,7 +295,7 @@ export default function Home() {
               PCT, and AHA BLS certifications.
             </p>
 
-            <div className="flex flex-wrap gap-3 animate-fade-up delay-400">
+            <div className="flex flex-wrap gap-3 mb-10 animate-fade-up delay-400">
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-teal-700 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-800 transition-colors"
@@ -309,35 +311,48 @@ export default function Home() {
                 <ChevronDown className="w-4 h-4" />
               </a>
             </div>
-          </div>
 
-          <div className="flex flex-col gap-6 animate-fade-up delay-300">
-            {/* Profile photo */}
-            <div className="relative mx-auto lg:mx-0 w-64 h-80 lg:w-80 lg:h-96 rounded-2xl overflow-hidden border border-stone-200 shadow-xl">
-              <Image
-                src="/stephanie-hero.png"
-                alt="Stephanie Leonenko"
-                fill
-                sizes="(max-width: 1024px) 256px, 320px"
-                className="object-cover object-center"
-                priority
-              />
-              {/* subtle vignette */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
+            {/* Stats row */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 animate-fade-up delay-500">
               {STATS.map((stat) => (
                 <div
                   key={stat.label}
                   className="bg-white border border-stone-200 rounded-xl p-4 text-center shadow-sm"
                 >
                   <div className="text-2xl font-light text-teal-700 mb-1">{stat.value}</div>
-                  <div className="text-xs text-stone-500 font-medium">{stat.label}</div>
+                  <div className="text-xs text-stone-500 font-medium leading-tight">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
+
+          {/* Right: full-height photo */}
+          <div className="hidden lg:block relative animate-fade-up delay-200">
+            <div className="absolute inset-0 rounded-2xl overflow-hidden border border-stone-200 shadow-2xl">
+              <Image
+                src="/stephanie-hero.png"
+                alt="Stephanie Leonenko"
+                fill
+                sizes="50vw"
+                className="object-cover object-top"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+            </div>
+          </div>
+
+          {/* Mobile photo */}
+          <div className="lg:hidden relative w-56 h-72 mx-auto rounded-2xl overflow-hidden border border-stone-200 shadow-xl animate-fade-up delay-200">
+            <Image
+              src="/stephanie-hero.png"
+              alt="Stephanie Leonenko"
+              fill
+              sizes="224px"
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+
         </div>
       </section>
 

@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
-  Award,
-  BookOpen,
   Briefcase,
   GraduationCap,
   Heart,
@@ -16,7 +15,6 @@ import {
   ChevronDown,
   Menu,
   X,
-  ExternalLink,
   Activity,
   Stethoscope,
   ClipboardList,
@@ -286,14 +284,18 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-6 animate-fade-up delay-300">
-            {/* Photo placeholder - replace with real photo */}
-            <div className="relative mx-auto lg:mx-0 w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-stone-200 shadow-xl bg-gradient-to-br from-teal-100 to-stone-200 flex items-center justify-center">
-              <div className="text-center text-stone-400">
-                <div className="w-20 h-20 rounded-full bg-stone-300 mx-auto mb-3 flex items-center justify-center">
-                  <span className="text-2xl font-light text-stone-500">SL</span>
-                </div>
-                <p className="text-xs font-mono">Photo coming soon</p>
-              </div>
+            {/* Profile photo */}
+            <div className="relative mx-auto lg:mx-0 w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-stone-200 shadow-xl">
+              <Image
+                src="/stephanie.jpg"
+                alt="Stephanie Leonenko"
+                fill
+                sizes="(max-width: 1024px) 256px, 320px"
+                className="object-cover object-top"
+                priority
+              />
+              {/* subtle vignette */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
             </div>
 
             <div className="grid grid-cols-2 gap-4">
@@ -546,6 +548,7 @@ export default function Home() {
                 +1 (347) 975-1512
               </a>
             </div>
+
 
             <div className="border border-stone-100 rounded-2xl p-6 bg-stone-50 text-left grid sm:grid-cols-2 gap-4">
               <div>

@@ -128,13 +128,25 @@ const EXPERIENCE = [
   {
     role: "Certified Nurse Assistant - Level 2",
     employer: "Providence Health - Centre For Medically Fragile Children",
-    location: "New York",
+    location: "Portland, OR",
     period: "Jan 2018 - Oct 2018",
     highlights: [
       "Proficiently used Epic EMR to document children's medical histories, vitals, and clinical notes with accuracy",
       "Maintained patients' physical and mental well-being through attentive, compassionate pediatric care",
       "Recorded seizure activities, conducted bladder scans, administered bolus feedings, and placed pulse oximeters",
       "Built trust with young patients and families, fostering healing and hope in a specialized care environment",
+    ],
+  },
+  {
+    role: "Certified Nurse's Assistant - Medical/Surgical, Medically Fragile Children",
+    employer: "South Nassau Communities Hospital",
+    location: "Oceanside, NY",
+    period: "2013 - 2018",
+    highlights: [
+      "Provided compassionate Med/Surg care with a focus on medically fragile pediatric patients over a 5-year tenure",
+      "Assisted with daily activities, personal hygiene, and mobility for patients with complex and chronic conditions",
+      "Monitored vital signs and documented clinical observations, communicating changes promptly to nursing staff",
+      "Developed deep expertise in the unique physical and emotional needs of medically fragile children and their families",
     ],
   },
 ];
@@ -443,7 +455,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-light text-stone-900">
               Professional History
             </h2>
-            <p className="text-stone-400 text-sm mt-2 font-mono">10+ years across ED, Med/Surg, and Pediatric settings</p>
+            <p className="text-stone-400 text-sm mt-2 font-mono">10+ years across ED, Med/Surg, and Medically Fragile Pediatric settings</p>
           </div>
 
           {/* Timeline */}

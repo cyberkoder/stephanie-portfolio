@@ -18,6 +18,7 @@ import {
   Activity,
   Stethoscope,
   ClipboardList,
+  LayoutDashboard,
 } from "lucide-react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -96,6 +97,24 @@ const SKILLS = [
       "Accurate Medical Documentation",
       "Pediatric Patient Care",
       "Emergency Department Workflow",
+    ],
+  },
+  {
+    category: "Healthcare Administration",
+    icon: LayoutDashboard,
+    items: [
+      "Healthcare Policy & Regulatory Compliance",
+      "HIPAA & OSHA Standards",
+      "Quality Improvement (QI) Initiatives",
+      "Staff Scheduling & Workforce Coordination",
+      "Patient Experience & Satisfaction",
+      "Care Coordination & Case Management",
+      "Budget & Resource Management",
+      "Joint Commission Accreditation Standards",
+      "Healthcare Informatics & Data Reporting",
+      "Risk Management & Patient Safety",
+      "Strategic Operations Planning",
+      "Performance Metrics & Outcome Tracking",
     ],
   },
 ];
@@ -418,18 +437,27 @@ export default function Home() {
           </div>
 
           {/* Skills grid */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SKILLS.map((skillGroup) => {
               const Icon = skillGroup.icon;
+              const isAdmin = skillGroup.category === "Healthcare Administration";
               return (
-                <div key={skillGroup.category} className="bg-white border border-stone-200 rounded-2xl p-6">
+                <div
+                  key={skillGroup.category}
+                  className={`bg-white border border-stone-200 rounded-2xl p-6 ${isAdmin ? "md:col-span-2 lg:col-span-3" : ""}`}
+                >
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-lg bg-teal-50 border border-teal-200 flex items-center justify-center">
-                      <Icon className="w-4 h-4 text-teal-700" />
+                    <div className={`w-8 h-8 rounded-lg border flex items-center justify-center ${isAdmin ? "bg-teal-700 border-teal-700" : "bg-teal-50 border-teal-200"}`}>
+                      <Icon className={`w-4 h-4 ${isAdmin ? "text-white" : "text-teal-700"}`} />
                     </div>
-                    <h3 className="text-sm font-semibold text-stone-800">{skillGroup.category}</h3>
+                    <div>
+                      <h3 className="text-sm font-semibold text-stone-800">{skillGroup.category}</h3>
+                      {isAdmin && (
+                        <p className="text-xs text-stone-400 mt-0.5">Knowledge area from BS Healthcare Administration</p>
+                      )}
+                    </div>
                   </div>
-                  <ul className="space-y-2">
+                  <ul className={`gap-2 ${isAdmin ? "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4" : "space-y-2"}`}>
                     {skillGroup.items.map((item) => (
                       <li key={item} className="flex items-start gap-2 text-xs text-stone-600">
                         <div className="w-1 h-1 rounded-full bg-teal-400 mt-1.5 flex-shrink-0" />

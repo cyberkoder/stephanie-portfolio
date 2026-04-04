@@ -379,6 +379,15 @@ export default function Home() {
                 className="object-cover object-top"
               />
             </div>
+            <div className="relative flex-shrink-0 w-56 h-64 rounded-2xl overflow-hidden border border-stone-200 shadow-md">
+              <Image
+                src="/stephanie-clinical.png"
+                alt="Stephanie Leonenko in clinical setting"
+                fill
+                sizes="224px"
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-start">

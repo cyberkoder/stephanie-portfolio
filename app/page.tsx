@@ -19,6 +19,7 @@ import {
   Stethoscope,
   ClipboardList,
   LayoutDashboard,
+  Droplets,
 } from "lucide-react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -60,6 +61,13 @@ const CREDENTIALS = [
     detail: "Active / Current - BLS for Healthcare Providers",
     color: "rose",
   },
+  {
+    icon: Droplets,
+    title: "Licensed Phlebotomist",
+    issuer: "New York State",
+    detail: "Active / Current - Certified & Licensed Phlebotomy Technician",
+    color: "purple",
+  },
 ];
 
 const SKILLS = [
@@ -80,10 +88,12 @@ const SKILLS = [
     icon: Shield,
     items: [
       "Epic EMR Documentation",
+      "Phlebotomy & Venipuncture",
       "Bladder Scan Operation",
       "Pulse Oximeter Placement",
       "Seizure Activity Monitoring",
       "Bolus Feeding Administration",
+      "Specimen Collection & Handling",
       "Infection Control Protocols",
     ],
   },
@@ -459,18 +469,20 @@ export default function Home() {
             <p className="text-stone-400 text-sm mt-2">All certifications Active / Current</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {CREDENTIALS.map((cred) => {
               const Icon = cred.icon;
               const iconBg: Record<string, string> = {
                 teal: "bg-teal-100 border-teal-200 text-teal-700",
                 blue: "bg-blue-100 border-blue-200 text-blue-700",
                 rose: "bg-rose-100 border-rose-200 text-rose-700",
+                purple: "bg-purple-100 border-purple-200 text-purple-700",
               };
               const badgeBg: Record<string, string> = {
                 teal: "bg-teal-50 text-teal-700 border-teal-200",
                 blue: "bg-blue-50 text-blue-700 border-blue-200",
                 rose: "bg-rose-50 text-rose-700 border-rose-200",
+                purple: "bg-purple-50 text-purple-700 border-purple-200",
               };
               return (
                 <div
@@ -656,7 +668,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-xs font-mono text-stone-400 mb-1">Certifications</p>
-                <p className="text-sm text-stone-700">NYS CNA, NYS PCT, AHA BLS - Active</p>
+                <p className="text-sm text-stone-700">NYS CNA, NYS PCT, AHA BLS, Phlebotomist - Active</p>
               </div>
               <div>
                 <p className="text-xs font-mono text-stone-400 mb-1">EMR Systems</p>
@@ -674,7 +686,7 @@ export default function Home() {
             <span className="text-sm text-stone-500">Stephanie Leonenko</span>
           </div>
           <p className="text-xs text-stone-400 font-mono">
-            NYS CNA - NYS PCT - AHA BLS - Commack, NY
+            NYS CNA - NYS PCT - AHA BLS - Phlebotomist - Commack, NY
           </p>
           <p className="text-xs text-stone-400">
             &copy; {new Date().getFullYear()} Stephanie Leonenko

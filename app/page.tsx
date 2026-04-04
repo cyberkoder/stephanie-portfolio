@@ -326,14 +326,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right: full-height photo */}
-          <div className="hidden lg:block relative animate-fade-up delay-200">
-            <div className="absolute inset-0 rounded-2xl overflow-hidden border border-stone-200 shadow-2xl">
+          {/* Right: photo */}
+          <div className="hidden lg:flex items-center justify-center animate-fade-up delay-200">
+            <div className="relative w-full max-w-sm h-[520px] rounded-2xl overflow-hidden border border-stone-200 shadow-2xl">
               <Image
                 src="/stephanie-hero.png"
                 alt="Stephanie Leonenko"
                 fill
-                sizes="50vw"
+                sizes="420px"
                 className="object-cover object-top"
                 priority
               />
@@ -342,12 +342,12 @@ export default function Home() {
           </div>
 
           {/* Mobile photo */}
-          <div className="lg:hidden relative w-56 h-72 mx-auto rounded-2xl overflow-hidden border border-stone-200 shadow-xl animate-fade-up delay-200">
+          <div className="lg:hidden relative w-52 h-64 mx-auto rounded-2xl overflow-hidden border border-stone-200 shadow-xl animate-fade-up delay-200">
             <Image
               src="/stephanie-hero.png"
               alt="Stephanie Leonenko"
               fill
-              sizes="224px"
+              sizes="208px"
               className="object-cover object-top"
               priority
             />
@@ -359,6 +359,28 @@ export default function Home() {
       {/* ── About ── */}
       <section id="about" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
+          {/* Photo strip */}
+          <div className="flex gap-4 mb-16 overflow-x-auto pb-2">
+            <div className="relative flex-shrink-0 w-56 h-64 rounded-2xl overflow-hidden border border-stone-200 shadow-md">
+              <Image
+                src="/stephanie-hero.png"
+                alt="Stephanie Leonenko"
+                fill
+                sizes="224px"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="relative flex-shrink-0 w-56 h-64 rounded-2xl overflow-hidden border border-stone-200 shadow-md">
+              <Image
+                src="/stephanie-work.png"
+                alt="Stephanie Leonenko at work"
+                fill
+                sizes="224px"
+                className="object-cover object-top"
+              />
+            </div>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <p className="text-xs font-mono text-teal-600 tracking-widest uppercase mb-3">About Me</p>

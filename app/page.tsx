@@ -173,7 +173,7 @@ const EXPERIENCE = [
 const EDUCATION = [
   {
     degree: "Bachelor of Science - Healthcare Administration",
-    school: "University",
+    school: "Southern New Hampshire University (SNHU)",
     year: "In Progress",
     detail: "Comprehensive study of healthcare systems, policy, finance, and organizational management",
   },

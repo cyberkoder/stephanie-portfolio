@@ -3,16 +3,19 @@
 export default function ResumePage() {
   return (
     <>
-      <div className="print:hidden fixed top-0 inset-x-0 z-50 bg-white border-b border-stone-200 px-6 py-3 flex items-center justify-between">
+      <div className="print:hidden fixed top-0 inset-x-0 z-50 bg-white border-b border-stone-200 px-6 py-3 flex items-center justify-between gap-4">
         <a href="/" className="text-sm text-stone-500 hover:text-teal-700 transition-colors">
           &larr; Back to Portfolio
         </a>
-        <button
-          onClick={() => window.print()}
-          className="text-sm bg-teal-700 text-white px-5 py-2 rounded-lg hover:bg-teal-800 transition-colors font-medium"
-        >
-          Download / Print PDF
-        </button>
+        <div className="flex items-center gap-4">
+          <p className="text-xs text-stone-400 hidden sm:block">Tip: in print dialog, set Headers &amp; Footers to <strong>Off</strong></p>
+          <button
+            onClick={() => window.print()}
+            className="text-sm bg-teal-700 text-white px-5 py-2 rounded-lg hover:bg-teal-800 transition-colors font-medium"
+          >
+            Download / Print PDF
+          </button>
+        </div>
       </div>
 
       <main className="print:pt-0 pt-14 bg-white min-h-screen">

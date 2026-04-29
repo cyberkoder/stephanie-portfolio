@@ -19,9 +19,9 @@ export default function ResumePage() {
         <div className="max-w-[760px] mx-auto px-10 py-10 print:py-8 print:px-8 font-sans">
 
           {/* ── Header ── */}
-          <header className="mb-5 pb-4 border-b-2 border-stone-800">
+          <header className="mb-5 pb-4 border-b-2 border-teal-600">
             <h1 className="text-[26px] font-bold text-stone-900 tracking-tight mb-0.5">Stephanie Leonenko</h1>
-            <p className="text-sm font-semibold text-stone-700 mb-2">Healthcare Administration | Operations | Care Coordination</p>
+            <p className="text-sm font-semibold text-teal-700 mb-2">Healthcare Administration | Operations | Care Coordination</p>
             <p className="text-sm text-stone-600">
               Commack, NY &nbsp;|&nbsp; stephanie@leonenko.me &nbsp;|&nbsp; (347) 975-1512
             </p>
@@ -29,7 +29,7 @@ export default function ResumePage() {
 
           {/* ── Summary ── */}
           <section className="mb-5">
-            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold text-teal-700 uppercase tracking-wide border-b border-teal-200 pb-0.5 mb-2">
               Professional Summary
             </h2>
             <p className="text-sm text-stone-700 leading-relaxed">
@@ -45,7 +45,7 @@ export default function ResumePage() {
 
           {/* ── Core Competencies ── */}
           <section className="mb-5">
-            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold text-teal-700 uppercase tracking-wide border-b border-teal-200 pb-0.5 mb-2">
               Core Competencies
             </h2>
             <div className="grid grid-cols-3 gap-x-4 gap-y-0.5 text-sm text-stone-700">
@@ -67,7 +67,7 @@ export default function ResumePage() {
                 "Strategic Planning & Performance Metrics",
               ].map((skill) => (
                 <div key={skill} className="flex items-start gap-1.5">
-                  <span className="mt-1 flex-shrink-0 text-stone-400 text-[10px]">&#9632;</span>
+                  <span className="mt-1 flex-shrink-0 text-teal-500 text-[10px]">&#9632;</span>
                   <span className="leading-snug">{skill}</span>
                 </div>
               ))}
@@ -86,7 +86,7 @@ export default function ResumePage() {
                   <h3 className="text-sm font-bold text-stone-900">Patient Care Technician / Certified Nursing Assistant</h3>
                   <span className="text-xs text-stone-500 whitespace-nowrap">2023 - Present</span>
                 </div>
-                <p className="text-sm font-semibold text-stone-700 mb-1">Northwell Health - Huntington Hospital | Huntington, NY | Emergency Department</p>
+                <p className="text-sm font-semibold text-teal-700 mb-1">Northwell Health - Huntington Hospital | Huntington, NY | Emergency Department</p>
                 <ul className="space-y-0.5 text-sm text-stone-700 list-none">
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Supported high-volume ED operations including patient triage, trauma care assistance, and throughput coordination across a fast-paced emergency department</li>
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Monitored and documented patient vital signs using Epic EMR, ensuring accurate real-time clinical data for the care team</li>
@@ -100,7 +100,7 @@ export default function ResumePage() {
                   <h3 className="text-sm font-bold text-stone-900">Certified Nursing Assistant</h3>
                   <span className="text-xs text-stone-500 whitespace-nowrap">March 2019 - 2023</span>
                 </div>
-                <p className="text-sm font-semibold text-stone-700 mb-1">Northwell Health - Plainview Hospital | Plainview, NY | Medical/Surgical Unit</p>
+                <p className="text-sm font-semibold text-teal-700 mb-1">Northwell Health - Plainview Hospital | Plainview, NY | Medical/Surgical Unit</p>
                 <ul className="space-y-0.5 text-sm text-stone-700 list-none">
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Provided direct patient care and ADL support for post-surgical and medical patients, maintaining dignity, safety, and comfort in a high-acuity unit</li>
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Monitored and documented vital signs in Epic EMR, communicating clinical changes to the nursing team to support timely intervention</li>
@@ -114,7 +114,7 @@ export default function ResumePage() {
                   <h3 className="text-sm font-bold text-stone-900">Certified Nursing Assistant - Medically Fragile Pediatrics</h3>
                   <span className="text-xs text-stone-500 whitespace-nowrap">January 2018 - October 2018</span>
                 </div>
-                <p className="text-sm font-semibold text-stone-700 mb-1">Providence Health - Centre For Medically Fragile Children</p>
+                <p className="text-sm font-semibold text-teal-700 mb-1">Providence Health - Centre For Medically Fragile Children</p>
                 <ul className="space-y-0.5 text-sm text-stone-700 list-none">
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Documented medical histories, vital signs, and clinical notes for pediatric patients with complex conditions using Epic EMR</li>
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Monitored seizure activity, conducted bladder scans, administered bolus feedings, and placed pulse oximeters per clinical protocols</li>
@@ -127,7 +127,7 @@ export default function ResumePage() {
                   <h3 className="text-sm font-bold text-stone-900">Certified Nursing Assistant</h3>
                   <span className="text-xs text-stone-500 whitespace-nowrap">2013 - 2018</span>
                 </div>
-                <p className="text-sm font-semibold text-stone-700 mb-1">South Nassau Communities Hospital | Oceanside, NY | Medical/Surgical Unit</p>
+                <p className="text-sm font-semibold text-teal-700 mb-1">South Nassau Communities Hospital | Oceanside, NY | Medical/Surgical Unit</p>
                 <ul className="space-y-0.5 text-sm text-stone-700 list-none">
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Delivered 5 years of direct patient care across medical/surgical floors, supporting patients with a range of acute and chronic conditions</li>
                   <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Assisted patients with activities of daily living (ADLs), mobility, personal hygiene, and comfort care</li>
@@ -140,7 +140,7 @@ export default function ResumePage() {
 
           {/* ── Education ── */}
           <section className="mb-5">
-            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold text-teal-700 uppercase tracking-wide border-b border-teal-200 pb-0.5 mb-2">
               Education
             </h2>
             <div className="space-y-2">
@@ -162,7 +162,7 @@ export default function ResumePage() {
 
           {/* ── Licenses & Certifications ── */}
           <section className="mb-2">
-            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold text-teal-700 uppercase tracking-wide border-b border-teal-200 pb-0.5 mb-2">
               Licenses and Certifications
             </h2>
             <div className="grid grid-cols-2 gap-x-8 gap-y-0.5 text-sm text-stone-700">

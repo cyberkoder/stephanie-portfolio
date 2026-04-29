@@ -3,7 +3,7 @@
 export default function ResumePage() {
   return (
     <>
-      <div className="print:hidden fixed top-0 inset-x-0 z-50 bg-white border-b border-stone-200 px-6 py-3 flex items-center justify-between gap-4">
+      <div className="fixed top-0 inset-x-0 z-50 bg-white border-b border-stone-200 px-6 py-3 flex items-center justify-between gap-4" style={{display: 'flex'}} id="print-toolbar">
         <a href="/" className="text-sm text-stone-500 hover:text-teal-700 transition-colors">
           &larr; Back to Portfolio
         </a>
@@ -18,7 +18,7 @@ export default function ResumePage() {
         </div>
       </div>
 
-      <main className="print:pt-0 pt-14 bg-white min-h-screen">
+      <main className="print:pt-0 pt-14 bg-white">
         <div className="max-w-[760px] mx-auto px-10 py-10 print:py-8 print:px-8 font-sans">
 
           {/* ── Header ── */}
@@ -183,6 +183,7 @@ export default function ResumePage() {
         @media print {
           @page { margin: 0.55in 0.65in; size: letter; }
           body { -webkit-print-color-adjust: exact; print-color-adjust: exact; font-size: 12px; }
+          #print-toolbar { display: none !important; }
         }
       `}</style>
     </>

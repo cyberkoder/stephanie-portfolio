@@ -182,7 +182,7 @@ const EDUCATION = [
   {
     degree: "Bachelor of Science - Healthcare Administration",
     school: "Southern New Hampshire University (SNHU)",
-    year: "In Progress",
+    year: "Expected February 2027",
     detail: "Comprehensive study of healthcare systems, policy, finance, and organizational management",
   },
   {

@@ -147,7 +147,7 @@ export default function ResumePage() {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h3 className="text-sm font-bold text-stone-900">Bachelor of Science in Healthcare Administration</h3>
-                  <p className="text-sm text-stone-600">Southern New Hampshire University (SNHU) - In Progress</p>
+                  <p className="text-sm text-stone-600">Southern New Hampshire University (SNHU) - Expected February 2027</p>
                   <p className="text-xs text-stone-400">Coursework: Healthcare Systems, Health Policy, Organizational Management, Healthcare Finance, Quality Improvement</p>
                 </div>
               </div>

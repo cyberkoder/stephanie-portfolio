@@ -3,10 +3,9 @@
 export default function ResumePage() {
   return (
     <>
-      {/* Print button — hidden when printing */}
       <div className="print:hidden fixed top-0 inset-x-0 z-50 bg-white border-b border-stone-200 px-6 py-3 flex items-center justify-between">
         <a href="/" className="text-sm text-stone-500 hover:text-teal-700 transition-colors">
-          ← Back to Portfolio
+          &larr; Back to Portfolio
         </a>
         <button
           onClick={() => window.print()}
@@ -16,176 +15,161 @@ export default function ResumePage() {
         </button>
       </div>
 
-      {/* Resume */}
       <main className="print:pt-0 pt-14 bg-white min-h-screen">
-        <div className="max-w-[760px] mx-auto px-10 py-10 print:py-8 print:px-8">
+        <div className="max-w-[760px] mx-auto px-10 py-10 print:py-8 print:px-8 font-sans">
 
-          {/* Header */}
-          <header className="mb-6 pb-5 border-b border-stone-200">
-            <h1 className="text-3xl font-bold text-stone-900 tracking-tight mb-1">Stephanie Leonenko</h1>
-            <p className="text-base text-teal-700 font-semibold mb-3">Healthcare Administration Professional</p>
-            <div className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-stone-600">
-              <span>Commack, NY 11725</span>
-              <span>stephanie@leonenko.me</span>
-              <span>+1 (347) 975-1512</span>
-            </div>
+          {/* ── Header ── */}
+          <header className="mb-5 pb-4 border-b-2 border-stone-800">
+            <h1 className="text-[26px] font-bold text-stone-900 tracking-tight mb-0.5">Stephanie Leonenko</h1>
+            <p className="text-sm font-semibold text-stone-700 mb-2">Healthcare Administration | Operations | Care Coordination</p>
+            <p className="text-sm text-stone-600">
+              Commack, NY &nbsp;|&nbsp; stephanie@leonenko.me &nbsp;|&nbsp; (347) 975-1512
+            </p>
           </header>
 
-          {/* Summary */}
-          <section className="mb-6">
-            <h2 className="text-xs font-bold text-teal-700 tracking-widest uppercase mb-2">Professional Summary</h2>
+          {/* ── Summary ── */}
+          <section className="mb-5">
+            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+              Professional Summary
+            </h2>
             <p className="text-sm text-stone-700 leading-relaxed">
-              Healthcare professional with 10+ years of frontline clinical experience at Northwell Health and other leading
-              systems, transitioning into healthcare administration. Pursuing a BS in Healthcare Administration at Southern
-              New Hampshire University, with demonstrated knowledge of ED operations, care coordination, regulatory compliance,
-              HIPAA/OSHA standards, and Epic EMR. Holds active NYS CNA, PCT, BLS, and Phlebotomy licenses. Brings rare
-              dual perspective — clinical depth combined with administrative training — to drive operational improvements
-              and patient-centered outcomes at scale.
+              Healthcare Administration professional with 10+ years of progressive clinical operations experience across
+              emergency, medical/surgical, and pediatric care settings at Northwell Health and other major health systems.
+              Pursuing a Bachelor of Science in Healthcare Administration (SNHU), with applied knowledge of healthcare
+              operations management, regulatory compliance (HIPAA, OSHA, Joint Commission), quality improvement, care
+              coordination, and Epic EMR. Holds four active NYS and national licenses. Brings a rare combination of
+              frontline patient care expertise and administrative education to support operational excellence, staff
+              coordination, and patient-centered outcomes.
             </p>
           </section>
 
-          {/* Licenses & Certifications */}
-          <section className="mb-6">
-            <h2 className="text-xs font-bold text-teal-700 tracking-widest uppercase mb-2">Licenses &amp; Certifications</h2>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-1 text-sm text-stone-700">
-              <div className="flex items-start gap-2">
-                <span className="text-teal-500 mt-0.5">•</span>
-                <span><strong>NYS Certified Nursing Assistant (CNA)</strong> — Active</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-teal-500 mt-0.5">•</span>
-                <span><strong>NYS Patient Care Technician (PCT)</strong> — Active</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-teal-500 mt-0.5">•</span>
-                <span><strong>AHA Basic Life Support (BLS)</strong> — Active</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-teal-500 mt-0.5">•</span>
-                <span><strong>Licensed Phlebotomist (NYS)</strong> — Active</span>
-              </div>
-            </div>
-          </section>
-
-          {/* Skills */}
-          <section className="mb-6">
-            <h2 className="text-xs font-bold text-teal-700 tracking-widest uppercase mb-2">Core Competencies</h2>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-0.5 text-sm text-stone-700">
+          {/* ── Core Competencies ── */}
+          <section className="mb-5">
+            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+              Core Competencies
+            </h2>
+            <div className="grid grid-cols-3 gap-x-4 gap-y-0.5 text-sm text-stone-700">
               {[
-                "Healthcare Policy & Regulatory Compliance",
-                "HIPAA & OSHA Standards",
-                "Quality Improvement (QI) Initiatives",
-                "Staff Scheduling & Workforce Coordination",
-                "Patient Experience & Satisfaction Metrics",
+                "Healthcare Operations Management",
+                "Regulatory Compliance (HIPAA, OSHA)",
+                "Quality Improvement (QI / PI)",
                 "Care Coordination & Case Management",
+                "Patient Safety & Risk Management",
+                "Joint Commission Standards",
+                "Staff Scheduling & Workforce Planning",
+                "Patient Experience & Satisfaction",
                 "Budget & Resource Management",
-                "Joint Commission Accreditation Standards",
-                "Healthcare Informatics & Data Reporting",
-                "Risk Management & Patient Safety",
-                "Strategic Operations Planning",
-                "Performance Metrics & Outcome Tracking",
+                "Healthcare Informatics & Reporting",
                 "Epic EMR (Proficient)",
-                "ED Workflow & Throughput Optimization",
-                "Interdisciplinary Team Collaboration",
-                "Accurate Clinical Documentation",
+                "ED Workflow & Patient Throughput",
+                "Interdisciplinary Team Leadership",
+                "Clinical Documentation & Compliance",
+                "Strategic Planning & Performance Metrics",
               ].map((skill) => (
-                <div key={skill} className="flex items-start gap-2">
-                  <span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>
-                  <span>{skill}</span>
+                <div key={skill} className="flex items-start gap-1.5">
+                  <span className="mt-1 flex-shrink-0 text-stone-400 text-[10px]">&#9632;</span>
+                  <span className="leading-snug">{skill}</span>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Experience */}
-          <section className="mb-6">
-            <h2 className="text-xs font-bold text-teal-700 tracking-widest uppercase mb-3">Professional Experience</h2>
-            <div className="space-y-5">
+          {/* ── Work Experience ── */}
+          <section className="mb-5">
+            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-3">
+              Work Experience
+            </h2>
+            <div className="space-y-4">
 
               <div>
-                <div className="flex items-start justify-between gap-4 mb-1">
-                  <div>
-                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse's Assistant — Emergency Department</h3>
-                    <p className="text-sm text-teal-700 font-semibold">Northwell Health — Huntington Hospital, Huntington, NY</p>
-                  </div>
-                  <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">2023 — Present</span>
+                <div className="flex items-baseline justify-between gap-2 mb-0.5">
+                  <h3 className="text-sm font-bold text-stone-900">Patient Care Technician / Certified Nursing Assistant</h3>
+                  <span className="text-xs text-stone-500 whitespace-nowrap">2023 - Present</span>
                 </div>
-                <ul className="space-y-1 text-sm text-stone-700">
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Provided essential support to the healthcare team in a high-volume emergency department, assisting with triage, trauma care, and patient throughput</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Monitored vital signs and ensured patient comfort during critical moments, maintaining composure in high-pressure situations</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Performed EKGs to support cardiac monitoring and assist in diagnosing potential cardiac events</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Collaborated with nurses and physicians to maintain seamless department workflow and uphold quality care standards</li>
+                <p className="text-sm font-semibold text-stone-700 mb-1">Northwell Health - Huntington Hospital | Huntington, NY | Emergency Department</p>
+                <ul className="space-y-0.5 text-sm text-stone-700 list-none">
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Supported high-volume ED operations including patient triage, trauma care assistance, and throughput coordination across a fast-paced emergency department</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Monitored and documented patient vital signs using Epic EMR, ensuring accurate real-time clinical data for the care team</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Performed 12-lead EKGs to support cardiac monitoring and assist physicians in diagnosing cardiac events</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Collaborated with interdisciplinary teams including nurses, physicians, and charge staff to maintain department workflow efficiency and patient safety standards</li>
                 </ul>
               </div>
 
               <div>
-                <div className="flex items-start justify-between gap-4 mb-1">
-                  <div>
-                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse's Assistant — Medical/Surgical Department</h3>
-                    <p className="text-sm text-teal-700 font-semibold">Northwell Health — Plainview Hospital, Plainview, NY</p>
-                  </div>
-                  <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">Mar 2019 — 2023</span>
+                <div className="flex items-baseline justify-between gap-2 mb-0.5">
+                  <h3 className="text-sm font-bold text-stone-900">Certified Nursing Assistant</h3>
+                  <span className="text-xs text-stone-500 whitespace-nowrap">March 2019 - 2023</span>
                 </div>
-                <ul className="space-y-1 text-sm text-stone-700">
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Assisted patients with daily activities and personal hygiene, maintaining dignity and comfort across the medical/surgical unit</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Monitored and documented vital signs, collaborating with the care team to ensure patient safety and prompt response to changes</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Performed wound care including cleaning, dressing, monitoring healing progress, and reporting concerns to nursing staff</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Provided compassionate emotional support to patients and families during acute healthcare episodes</li>
+                <p className="text-sm font-semibold text-stone-700 mb-1">Northwell Health - Plainview Hospital | Plainview, NY | Medical/Surgical Unit</p>
+                <ul className="space-y-0.5 text-sm text-stone-700 list-none">
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Provided direct patient care and ADL support for post-surgical and medical patients, maintaining dignity, safety, and comfort in a high-acuity unit</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Monitored and documented vital signs in Epic EMR, communicating clinical changes to the nursing team to support timely intervention</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Performed wound care including cleaning, dressing changes, and healing progress monitoring in accordance with clinical protocols</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Supported infection control compliance and Joint Commission readiness standards throughout the unit</li>
                 </ul>
               </div>
 
               <div>
-                <div className="flex items-start justify-between gap-4 mb-1">
-                  <div>
-                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse Assistant — Medically Fragile Children</h3>
-                    <p className="text-sm text-teal-700 font-semibold">Providence Health — Centre For Medically Fragile Children</p>
-                  </div>
-                  <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">Jan 2018 — Oct 2018</span>
+                <div className="flex items-baseline justify-between gap-2 mb-0.5">
+                  <h3 className="text-sm font-bold text-stone-900">Certified Nursing Assistant - Medically Fragile Pediatrics</h3>
+                  <span className="text-xs text-stone-500 whitespace-nowrap">January 2018 - October 2018</span>
                 </div>
-                <ul className="space-y-1 text-sm text-stone-700">
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Proficiently used Epic EMR to document children's medical histories, vitals, and clinical notes with precision</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Monitored seizure activity, conducted bladder scans, administered bolus feedings, and placed pulse oximeters</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Maintained physical and mental well-being of medically fragile pediatric patients through attentive, specialized care</li>
+                <p className="text-sm font-semibold text-stone-700 mb-1">Providence Health - Centre For Medically Fragile Children</p>
+                <ul className="space-y-0.5 text-sm text-stone-700 list-none">
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Documented medical histories, vital signs, and clinical notes for pediatric patients with complex conditions using Epic EMR</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Monitored seizure activity, conducted bladder scans, administered bolus feedings, and placed pulse oximeters per clinical protocols</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Delivered specialized physical and emotional care to medically fragile pediatric patients, supporting family communication and care continuity</li>
                 </ul>
               </div>
 
               <div>
-                <div className="flex items-start justify-between gap-4 mb-1">
-                  <div>
-                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse's Assistant — Medical/Surgical</h3>
-                    <p className="text-sm text-teal-700 font-semibold">South Nassau Communities Hospital, Oceanside, NY</p>
-                  </div>
-                  <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">2013 — 2018</span>
+                <div className="flex items-baseline justify-between gap-2 mb-0.5">
+                  <h3 className="text-sm font-bold text-stone-900">Certified Nursing Assistant</h3>
+                  <span className="text-xs text-stone-500 whitespace-nowrap">2013 - 2018</span>
                 </div>
-                <ul className="space-y-1 text-sm text-stone-700">
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Delivered 5 years of compassionate Med/Surg care with specialization in medically fragile pediatric patients</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Assisted with daily activities, personal hygiene, and mobility for patients with complex and chronic conditions</li>
-                  <li className="flex items-start gap-2"><span className="text-teal-500 mt-0.5 flex-shrink-0">•</span>Monitored vital signs and documented clinical observations, communicating changes promptly to nursing staff</li>
+                <p className="text-sm font-semibold text-stone-700 mb-1">South Nassau Communities Hospital | Oceanside, NY | Medical/Surgical Unit</p>
+                <ul className="space-y-0.5 text-sm text-stone-700 list-none">
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Delivered 5 years of direct patient care across medical/surgical floors, supporting patients with a range of acute and chronic conditions</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Assisted patients with activities of daily living (ADLs), mobility, personal hygiene, and comfort care</li>
+                  <li className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Monitored vital signs and documented clinical observations, escalating concerns to nursing staff to ensure patient safety</li>
                 </ul>
               </div>
 
             </div>
           </section>
 
-          {/* Education */}
-          <section className="mb-6">
-            <h2 className="text-xs font-bold text-teal-700 tracking-widest uppercase mb-2">Education</h2>
-            <div className="space-y-3">
+          {/* ── Education ── */}
+          <section className="mb-5">
+            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+              Education
+            </h2>
+            <div className="space-y-2">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-sm font-bold text-stone-900">Bachelor of Science — Healthcare Administration</h3>
-                  <p className="text-sm text-stone-600">Southern New Hampshire University (SNHU)</p>
-                  <p className="text-xs text-stone-400">Healthcare systems, policy, finance, and organizational management</p>
+                  <h3 className="text-sm font-bold text-stone-900">Bachelor of Science in Healthcare Administration</h3>
+                  <p className="text-sm text-stone-600">Southern New Hampshire University (SNHU) - In Progress</p>
+                  <p className="text-xs text-stone-400">Coursework: Healthcare Systems, Health Policy, Organizational Management, Healthcare Finance, Quality Improvement</p>
                 </div>
-                <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">In Progress</span>
               </div>
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-sm font-bold text-stone-900">NYS High School Diploma</h3>
-                  <p className="text-sm text-stone-600">New York State</p>
+                  <h3 className="text-sm font-bold text-stone-900">High School Diploma</h3>
+                  <p className="text-sm text-stone-600">New York State | June 2012</p>
                 </div>
-                <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">June 2012</span>
               </div>
+            </div>
+          </section>
+
+          {/* ── Licenses & Certifications ── */}
+          <section className="mb-2">
+            <h2 className="text-sm font-bold text-stone-900 uppercase tracking-wide border-b border-stone-300 pb-0.5 mb-2">
+              Licenses and Certifications
+            </h2>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-0.5 text-sm text-stone-700">
+              <div className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>NYS Certified Nursing Assistant (CNA) - Active</div>
+              <div className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>NYS Patient Care Technician (PCT) - Active</div>
+              <div className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>AHA Basic Life Support (BLS) - Active</div>
+              <div className="flex items-start gap-2"><span className="flex-shrink-0 mt-0.5">-</span>Licensed Phlebotomist, New York State - Active</div>
             </div>
           </section>
 
@@ -194,8 +178,8 @@ export default function ResumePage() {
 
       <style>{`
         @media print {
-          @page { margin: 0.6in 0.7in; size: letter; }
-          body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+          @page { margin: 0.55in 0.65in; size: letter; }
+          body { -webkit-print-color-adjust: exact; print-color-adjust: exact; font-size: 12px; }
         }
       `}</style>
     </>

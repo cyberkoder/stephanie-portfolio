@@ -153,7 +153,7 @@ const EXPERIENCE = [
     ],
   },
   {
-    role: "Certified Nurse Assistant - Level 2",
+    role: "Certified Nurse Assistant - Medically Fragile Children",
     employer: "Providence Health - Centre For Medically Fragile Children",
     location: "Portland, OR",
     period: "Jan 2018 - Oct 2018",
@@ -165,7 +165,7 @@ const EXPERIENCE = [
     ],
   },
   {
-    role: "Certified Nurse's Assistant - Medical/Surgical, Medically Fragile Children",
+    role: "Certified Nurse's Assistant - Medical/Surgical",
     employer: "South Nassau Communities Hospital",
     location: "Oceanside, NY",
     period: "2013 - 2018",

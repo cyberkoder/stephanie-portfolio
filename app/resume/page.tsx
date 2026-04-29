@@ -137,7 +137,7 @@ export default function ResumePage() {
               <div>
                 <div className="flex items-start justify-between gap-4 mb-1">
                   <div>
-                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse Assistant — Level 2</h3>
+                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse Assistant — Medically Fragile Children</h3>
                     <p className="text-sm text-teal-700 font-semibold">Providence Health — Centre For Medically Fragile Children</p>
                   </div>
                   <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">Jan 2018 — Oct 2018</span>
@@ -152,7 +152,7 @@ export default function ResumePage() {
               <div>
                 <div className="flex items-start justify-between gap-4 mb-1">
                   <div>
-                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse's Assistant — Med/Surg &amp; Medically Fragile Children</h3>
+                    <h3 className="text-sm font-bold text-stone-900">Certified Nurse's Assistant — Medical/Surgical</h3>
                     <p className="text-sm text-teal-700 font-semibold">South Nassau Communities Hospital, Oceanside, NY</p>
                   </div>
                   <span className="text-xs text-stone-500 font-mono whitespace-nowrap mt-0.5">2013 — 2018</span>

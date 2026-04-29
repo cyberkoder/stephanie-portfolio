@@ -223,6 +223,12 @@ function Navbar() {
             </a>
           ))}
           <a
+            href="/resume"
+            className="text-sm border border-stone-300 text-stone-700 px-4 py-2 rounded-lg hover:bg-stone-100 transition-colors font-medium"
+          >
+            Resume
+          </a>
+          <a
             href="#contact"
             className="text-sm bg-teal-700 text-white px-4 py-2 rounded-lg hover:bg-teal-800 transition-colors font-medium"
           >
@@ -251,6 +257,13 @@ function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="/resume"
+            onClick={() => setOpen(false)}
+            className="text-sm border border-stone-300 text-stone-700 px-4 py-2 rounded-lg text-center font-medium"
+          >
+            Resume
+          </a>
           <a
             href="#contact"
             onClick={() => setOpen(false)}

@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stephanie Leonenko | Healthcare Professional",
+  title: "Stephanie Leonenko | Healthcare Administration",
   description:
-    "Certified Nursing Assistant with 10+ years of patient care experience and a Bachelor of Science in Healthcare Administration. Based in Commack, New York.",
+    "Healthcare administration professional with 10+ years of clinical experience at Northwell Health. Pursuing BS Healthcare Administration at SNHU. NYS CNA, PCT, BLS, Phlebotomist. Based in Commack, New York.",
   metadataBase: new URL("https://s.leonenko.me"),
   openGraph: {
-    title: "Stephanie Leonenko | Healthcare Professional",
+    title: "Stephanie Leonenko | Healthcare Administration",
     description:
-      "CNA | BS Healthcare Administration | 10+ Years Patient Care",
+      "Healthcare Administration | 10+ Years Clinical Experience | Northwell Health | SNHU BS In Progress",
     url: "https://s.leonenko.me",
     siteName: "Stephanie Leonenko",
     locale: "en_US",

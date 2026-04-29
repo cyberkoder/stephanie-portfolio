@@ -29,14 +29,13 @@ const NAV_LINKS = [
   { label: "Credentials", href: "#credentials" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "#contact" },
 ];
 
 const STATS = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "3", label: "Active Certifications" },
-  { value: "ED", label: "Emergency Department" },
+  { value: "10+", label: "Years in Healthcare" },
+  { value: "4", label: "Active Licenses" },
+  { value: "BS", label: "Healthcare Admin (In Progress)" },
   { value: "Epic", label: "EMR Proficiency" },
 ];
 
@@ -73,44 +72,6 @@ const CREDENTIALS = [
 
 const SKILLS = [
   {
-    category: "Patient Care",
-    icon: Heart,
-    items: [
-      "Triage & Trauma Care Support",
-      "Vital Signs Monitoring",
-      "EKG Performance",
-      "Wound Care & Dressing",
-      "Activities of Daily Living (ADLs)",
-      "Patient Comfort & Safety",
-    ],
-  },
-  {
-    category: "Clinical Skills",
-    icon: Shield,
-    items: [
-      "Epic EMR Documentation",
-      "Phlebotomy & Venipuncture",
-      "Bladder Scan Operation",
-      "Pulse Oximeter Placement",
-      "Seizure Activity Monitoring",
-      "Bolus Feeding Administration",
-      "Specimen Collection & Handling",
-      "Infection Control Protocols",
-    ],
-  },
-  {
-    category: "Professional",
-    icon: ClipboardList,
-    items: [
-      "High-Pressure Environment Composure",
-      "Interdisciplinary Team Collaboration",
-      "Patient & Family Communication",
-      "Accurate Medical Documentation",
-      "Pediatric Patient Care",
-      "Emergency Department Workflow",
-    ],
-  },
-  {
     category: "Healthcare Administration",
     icon: LayoutDashboard,
     items: [
@@ -118,7 +79,7 @@ const SKILLS = [
       "HIPAA & OSHA Standards",
       "Quality Improvement (QI) Initiatives",
       "Staff Scheduling & Workforce Coordination",
-      "Patient Experience & Satisfaction",
+      "Patient Experience & Satisfaction Metrics",
       "Care Coordination & Case Management",
       "Budget & Resource Management",
       "Joint Commission Accreditation Standards",
@@ -126,6 +87,42 @@ const SKILLS = [
       "Risk Management & Patient Safety",
       "Strategic Operations Planning",
       "Performance Metrics & Outcome Tracking",
+    ],
+  },
+  {
+    category: "Operations & Leadership",
+    icon: ClipboardList,
+    items: [
+      "ED Workflow & Throughput Optimization",
+      "Interdisciplinary Team Collaboration",
+      "Patient & Family Communication",
+      "Accurate Clinical Documentation",
+      "High-Pressure Environment Management",
+      "Cross-departmental Coordination",
+    ],
+  },
+  {
+    category: "Clinical Knowledge",
+    icon: Heart,
+    items: [
+      "Triage & Trauma Care Protocols",
+      "Vital Signs & Patient Monitoring",
+      "EKG Performance & Interpretation Support",
+      "Wound Care Management",
+      "Pediatric & Medically Fragile Patient Care",
+      "Infection Control Protocols",
+    ],
+  },
+  {
+    category: "Systems & Compliance",
+    icon: Shield,
+    items: [
+      "Epic EMR (Proficient)",
+      "Phlebotomy & Specimen Handling",
+      "HIPAA-Compliant Documentation",
+      "Regulatory Reporting",
+      "Bladder Scan & Clinical Equipment",
+      "Northwell Health Protocols",
     ],
   },
 ];
@@ -197,10 +194,10 @@ const EDUCATION = [
 ];
 
 const CORE_VALUES = [
-  { icon: Heart, label: "Compassion", desc: "Every patient deserves dignity and genuine, attentive care." },
-  { icon: Shield, label: "Integrity", desc: "Honest, ethical practice in every clinical interaction." },
-  { icon: Users, label: "Teamwork", desc: "Healthcare is a team effort - I show up for my colleagues." },
-  { icon: Star, label: "Excellence", desc: "High standards, accurate documentation, continuous growth." },
+  { icon: Heart, label: "Patient Focus", desc: "Every administrative decision should trace back to better patient outcomes." },
+  { icon: Shield, label: "Compliance", desc: "HIPAA, OSHA, and Joint Commission standards are non-negotiable." },
+  { icon: Users, label: "Leadership", desc: "Bridging clinical staff and administration through clear communication." },
+  { icon: Star, label: "Continuous Improvement", desc: "QI initiatives, data-driven decisions, and relentless process refinement." },
 ];
 
 // ─── Navbar ───────────────────────────────────────────────────────────────────
@@ -282,7 +279,7 @@ export default function Home() {
           <div className="flex flex-col justify-center py-8">
             <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 text-teal-800 text-xs font-mono px-3 py-1.5 rounded-full mb-6 animate-fade-up w-fit">
               <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-              Available for Opportunities
+              Seeking Healthcare Administration Roles
             </div>
 
             <h1 className="text-5xl md:text-6xl font-light text-stone-900 leading-tight mb-4 animate-fade-up delay-100">
@@ -292,18 +289,18 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-stone-600 font-medium mb-2 animate-fade-up delay-200">
-              Certified Nursing Assistant - Patient Care Technician
+              Healthcare Administration Professional
             </p>
             <p className="text-sm text-stone-400 mb-8 flex items-center gap-1.5 animate-fade-up delay-200">
               <MapPin className="w-3.5 h-3.5" /> Commack, New York
             </p>
 
             <p className="text-base text-stone-600 leading-relaxed mb-8 max-w-lg animate-fade-up delay-300">
-              A dedicated healthcare professional with over 10 years of hands-on patient
-              care experience across emergency, medical/surgical, and pediatric settings.
-              Known for compassionate, dignified care, accurate Epic EMR documentation,
-              and calm performance in high-pressure environments. Holding active NYS CNA,
-              PCT, and AHA BLS certifications.
+              A healthcare professional with 10+ years of frontline clinical experience
+              transitioning into healthcare administration. Pursuing a BS in Healthcare
+              Administration at SNHU, with hands-on knowledge of ED operations, care
+              coordination, regulatory compliance, and Epic EMR. Holding active NYS CNA,
+              PCT, BLS, and Phlebotomy licenses.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10 animate-fade-up delay-400">
@@ -414,26 +411,26 @@ export default function Home() {
             <div>
               <p className="text-xs font-mono text-teal-600 tracking-widest uppercase mb-3">About Me</p>
               <h2 className="text-3xl md:text-4xl font-light text-stone-900 mb-6">
-                Patient-centered care<br />across every setting
+                Clinical roots.<br />Administrative vision.
               </h2>
               <div className="space-y-4 text-stone-600 leading-relaxed">
                 <p>
-                  I am a dedicated and experienced Certified Nursing Assistant with over 10 years
-                  of experience seeking to advance my career as a medical assistant. Throughout
-                  my career, I have demonstrated a commitment to providing compassionate care to
-                  patients in diverse healthcare settings.
+                  With over 10 years of frontline experience at Northwell Health and other leading
+                  systems, I bring a ground-level understanding of what makes healthcare operations
+                  work — and where they break down. That perspective is rare in administration,
+                  and it drives everything I do.
                 </p>
                 <p>
-                  Proficient in utilizing electronic medical record systems such as Epic, I
-                  prioritize accurate documentation and seamless patient care delivery. My
-                  experience spans emergency departments, medical/surgical floors, and specialized
-                  pediatric care for medically fragile children.
+                  I am currently pursuing a BS in Healthcare Administration at Southern New Hampshire
+                  University, building fluency in healthcare policy, finance, quality improvement,
+                  regulatory compliance, and organizational leadership — skills I am actively applying
+                  to move into an administrative role.
                 </p>
                 <p>
-                  My strong communication skills, attention to detail, and unwavering dedication
-                  to delivering high-quality care have enabled me to make a positive impact on
-                  the lives of those I serve - from trauma patients in the ED to the youngest,
-                  most vulnerable patients in pediatric care.
+                  From managing ED workflow under pressure to ensuring HIPAA-compliant Epic
+                  documentation across departments, I understand both the clinical and operational
+                  sides of patient care delivery. My goal is to bring that dual perspective into
+                  a leadership role that improves outcomes at scale.
                 </p>
               </div>
             </div>
@@ -467,7 +464,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-light text-stone-900">
               Licenses & Certifications
             </h2>
-            <p className="text-stone-400 text-sm mt-2">All certifications Active / Current</p>
+            <p className="text-stone-400 text-sm mt-2">All licenses Active / Current — backed by 10+ years of clinical application</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -512,7 +509,7 @@ export default function Home() {
               return (
                 <div
                   key={skillGroup.category}
-                  className={`bg-white border border-stone-200 rounded-2xl p-6 ${isAdmin ? "md:col-span-2 lg:col-span-3" : ""}`}
+                  className={`bg-white border rounded-2xl p-6 ${isAdmin ? "md:col-span-2 lg:col-span-3 border-teal-200 shadow-sm" : "border-stone-200"}`}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className={`w-8 h-8 rounded-lg border flex items-center justify-center ${isAdmin ? "bg-teal-700 border-teal-700" : "bg-teal-50 border-teal-200"}`}>
@@ -521,7 +518,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-sm font-semibold text-stone-800">{skillGroup.category}</h3>
                       {isAdmin && (
-                        <p className="text-xs text-stone-400 mt-0.5">Knowledge area from BS Healthcare Administration</p>
+                        <p className="text-xs text-teal-600 mt-0.5 font-medium">Core focus area — BS Healthcare Administration (SNHU)</p>
                       )}
                     </div>
                   </div>
@@ -548,7 +545,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-light text-stone-900">
               Professional History
             </h2>
-            <p className="text-stone-400 text-sm mt-2 font-mono">10+ years across ED, Med/Surg, and Medically Fragile Pediatric settings</p>
+            <p className="text-stone-400 text-sm mt-2 font-mono">10+ years at Northwell Health and leading healthcare systems — ED, Med/Surg, and Pediatric</p>
           </div>
 
           {/* Timeline */}
@@ -633,8 +630,8 @@ export default function Home() {
               Let&apos;s Connect
             </h2>
             <p className="text-stone-500 text-sm leading-relaxed mb-10">
-              Looking for a compassionate, experienced CNA or PCT for your team?
-              I&apos;d love to hear from you.
+              Interested in a healthcare administration candidate with real clinical depth?
+              I&apos;d love to connect.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -664,16 +661,16 @@ export default function Home() {
                 <p className="text-xs font-mono text-stone-400 mb-1">Status</p>
                 <div className="flex items-center gap-1.5">
                   <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-                  <p className="text-sm text-stone-700">Open to opportunities</p>
+                  <p className="text-sm text-stone-700">Seeking Healthcare Administration roles</p>
                 </div>
               </div>
               <div>
-                <p className="text-xs font-mono text-stone-400 mb-1">Certifications</p>
-                <p className="text-sm text-stone-700">NYS CNA, NYS PCT, AHA BLS, Phlebotomist - Active</p>
+                <p className="text-xs font-mono text-stone-400 mb-1">Licenses</p>
+                <p className="text-sm text-stone-700">NYS CNA, NYS PCT, AHA BLS, Phlebotomist — Active</p>
               </div>
               <div>
-                <p className="text-xs font-mono text-stone-400 mb-1">EMR Systems</p>
-                <p className="text-sm text-stone-700">Epic (Proficient)</p>
+                <p className="text-xs font-mono text-stone-400 mb-1">Education</p>
+                <p className="text-sm text-stone-700">BS Healthcare Administration, SNHU (In Progress)</p>
               </div>
             </div>
           </div>
@@ -687,7 +684,7 @@ export default function Home() {
             <span className="text-sm text-stone-500">Stephanie Leonenko</span>
           </div>
           <p className="text-xs text-stone-400 font-mono">
-            NYS CNA - NYS PCT - AHA BLS - Phlebotomist - Commack, NY
+            Healthcare Administration | BS SNHU (In Progress) | NYS CNA · PCT · BLS · Phlebotomist
           </p>
           <p className="text-xs text-stone-400">
             &copy; {new Date().getFullYear()} Stephanie Leonenko

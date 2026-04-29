@@ -44,28 +44,28 @@ const CREDENTIALS = [
     icon: Shield,
     title: "NYS Certified Nursing Assistant (CNA)",
     issuer: "New York State Department of Health",
-    detail: "Active / Current - New York State CNA License",
+    type: "State License",
     color: "teal",
   },
   {
     icon: Stethoscope,
     title: "NYS Patient Care Technician (PCT)",
     issuer: "New York State",
-    detail: "Active / Current - Patient Care Technician License",
+    type: "State License",
     color: "blue",
   },
   {
     icon: Activity,
     title: "AHA Basic Life Support (BLS)",
     issuer: "American Heart Association",
-    detail: "Active / Current - BLS for Healthcare Providers",
+    type: "Certification",
     color: "rose",
   },
   {
     icon: Droplets,
     title: "Licensed Phlebotomist",
     issuer: "New York State",
-    detail: "Active / Current - Certified & Licensed Phlebotomy Technician",
+    type: "State License",
     color: "purple",
   },
 ];
@@ -492,9 +492,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-sm font-semibold text-stone-800 mb-1 leading-snug">{cred.title}</h3>
                   <p className="text-xs text-stone-400 font-mono mb-3">{cred.issuer}</p>
-                  <span className={`inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full border ${badgeBg[cred.color]}`}>
-                    <div className="w-1 h-1 rounded-full bg-current animate-pulse" />
-                    {cred.detail}
+                  <span className={`inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full border ${badgeBg[cred.color]}`}>
+                    {cred.type}
                   </span>
                 </div>
               );

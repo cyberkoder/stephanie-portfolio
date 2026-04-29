@@ -1,1 +1,55 @@
-{"data":"aW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgSGVhcnQsIEhvbWUsIEV4dGVybmFsTGluayB9IGZyb20gImx1Y2lkZS1yZWFjdCI7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBOb3RGb3VuZCgpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9Im1pbi1oLXNjcmVlbiBiZy1zdG9uZS01MCBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBweC02Ij4KICAgICAgey8qIERlY29yYXRpdmUgYmFja2dyb3VuZCAqL30KICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgb3ZlcmZsb3ctaGlkZGVuIHBvaW50ZXItZXZlbnRzLW5vbmUiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSB0b3AtMS80IGxlZnQtMS80IHctOTYgaC05NiBiZy10ZWFsLTEwMC80MCByb3VuZGVkLWZ1bGwgYmx1ci0zeGwiIC8+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGJvdHRvbS0xLzQgcmlnaHQtMS80IHctNjQgaC02NCBiZy1zdG9uZS0yMDAvNjAgcm91bmRlZC1mdWxsIGJsdXItM3hsIiAvPgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB0ZXh0LWNlbnRlciBtYXgtdy1tZCI+CiAgICAgICAgey8qIEljb24gKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InctMTYgaC0xNiByb3VuZGVkLTJ4bCBiZy10ZWFsLTEwMCBib3JkZXIgYm9yZGVyLXRlYWwtMjAwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG14LWF1dG8gbWItNiI+CiAgICAgICAgICA8SGVhcnQgY2xhc3NOYW1lPSJ3LTcgaC03IHRleHQtdGVhbC02MDAiIC8+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiA0MDQgKi99CiAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIGZvbnQtbW9ubyB0ZXh0LXRlYWwtNjAwIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgbWItMyI+NDA0IC0gUGFnZSBOb3QgRm91bmQ8L3A+CiAgICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC00eGwgZm9udC1saWdodCB0ZXh0LXN0b25lLTkwMCBtYi00Ij4KICAgICAgICAgIExvb2tzIGxpa2UgdGhpcyBwYWdlPGJyIC8+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtdGVhbC03MDAiPmRvZXNuJmFwb3M7dCBleGlzdDwvc3Bhbj4KICAgICAgICA8L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zdG9uZS01MDAgdGV4dC1zbSBsZWFkaW5nLXJlbGF4ZWQgbWItMTAiPgogICAgICAgICAgVGhlIHBhZ2UgeW91JmFwb3M7cmUgbG9va2luZyBmb3IgbWF5IGhhdmUgbW92ZWQgb3IgbmV2ZXIgZXhpc3RlZC4KICAgICAgICAgIEhlYWQgYmFjayB0byBTdGVwaGFuaWUmYXBvcztzIHBvcnRmb2xpbyBvciB2aXNpdCBoZXIgaHVzYmFuZCZhcG9zO3MKICAgICAgICAgIHNpdGUgYmVsb3cuCiAgICAgICAgPC9wPgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBzbTpmbGV4LXJvdyBnYXAtMyBqdXN0aWZ5LWNlbnRlciI+CiAgICAgICAgICA8TGluawogICAgICAgICAgICBocmVmPSIvIgogICAgICAgICAgICBjbGFzc05hbWU9ImlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiBiZy10ZWFsLTcwMCB0ZXh0LXdoaXRlIHB4LTYgcHktMyByb3VuZGVkLWxnIHRleHQtc20gZm9udC1tZWRpdW0gaG92ZXI6YmctdGVhbC04MDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxIb21lIGNsYXNzTmFtZT0idy00IGgtNCIgLz4KICAgICAgICAgICAgQmFjayB0byBQb3J0Zm9saW8KICAgICAgICAgIDwvTGluaz4KICAgICAgICAgIDxhCiAgICAgICAgICAgIGhyZWY9Imh0dHBzOi8vYS5sZW9uZW5rby5tZSIKICAgICAgICAgICAgdGFyZ2V0PSJfYmxhbmsiCiAgICAgICAgICAgIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciIKICAgICAgICAgICAgY2xhc3NOYW1lPSJpbmxpbmUtZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgYm9yZGVyIGJvcmRlci1zdG9uZS0zMDAgdGV4dC1zdG9uZS02MDAgcHgtNiBweS0zIHJvdW5kZWQtbGcgdGV4dC1zbSBmb250LW1lZGl1bSBob3ZlcjpiZy1zdG9uZS0xMDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICA+CiAgICAgICAgICAgIFZpc2l0IGEubGVvbmVua28ubWUKICAgICAgICAgICAgPEV4dGVybmFsTGluayBjbGFzc05hbWU9InctMy41IGgtMy41IiAvPgogICAgICAgICAgPC9hPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogU3VidGxlIGJyYW5kaW5nICovfQogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC14cyB0ZXh0LXN0b25lLTMwMCBmb250LW1vbm8gbXQtMTIiPnMubGVvbmVua28ubWU8L3A+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKTsKfQo="}
+import Link from "next/link";
+import { Heart, Home, ExternalLink } from "lucide-react";
+
+export default function NotFound() {
+  return (
+    <div className="min-h-screen bg-stone-50 flex flex-col items-center justify-center px-6">
+      {/* Decorative background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-teal-100/40 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-stone-200/60 rounded-full blur-3xl" />
+      </div>
+
+      <div className="relative text-center max-w-md">
+        {/* Icon */}
+        <div className="w-16 h-16 rounded-2xl bg-teal-100 border border-teal-200 flex items-center justify-center mx-auto mb-6">
+          <Heart className="w-7 h-7 text-teal-600" />
+        </div>
+
+        {/* 404 */}
+        <p className="text-xs font-mono text-teal-600 tracking-widest uppercase mb-3">404 - Page Not Found</p>
+        <h1 className="text-4xl font-light text-stone-900 mb-4">
+          Looks like this page<br />
+          <span className="text-teal-700">doesn&apos;t exist</span>
+        </h1>
+        <p className="text-stone-500 text-sm leading-relaxed mb-10">
+          The page you&apos;re looking for may have moved or never existed.
+          Head back to Stephanie&apos;s portfolio or visit her husband&apos;s
+          site below.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center gap-2 bg-teal-700 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-800 transition-colors"
+          >
+            <Home className="w-4 h-4" />
+            Back to Portfolio
+          </Link>
+          <a
+            href="https://a.leonenko.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-600 px-6 py-3 rounded-lg text-sm font-medium hover:bg-stone-100 transition-colors"
+          >
+            Visit a.leonenko.me
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        {/* Subtle branding */}
+        <p className="text-xs text-stone-300 font-mono mt-12">s.leonenko.me</p>
+      </div>
+    </div>
+  );
+}

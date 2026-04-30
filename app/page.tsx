@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { ObfuscatedEmail, ObfuscatedPhone } from "./components/ObfuscatedContact";
 import {
   Briefcase,
   GraduationCap,
   Heart,
   Mail,
   MapPin,
-  Phone,
   Shield,
   Star,
   Users,
@@ -647,20 +647,8 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a
-                href="mailto:stephanie@leonenko.me"
-                className="inline-flex items-center justify-center gap-2 bg-teal-700 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-800 transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                stephanie@leonenko.me
-              </a>
-              <a
-                href="tel:+13479751512"
-                className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-stone-50 transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                +1 (347) 975-1512
-              </a>
+              <ObfuscatedEmail className="inline-flex items-center justify-center gap-2 bg-teal-700 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-800 transition-colors cursor-pointer border-0" />
+              <ObfuscatedPhone className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-stone-50 transition-colors cursor-pointer bg-transparent" />
             </div>
 
 

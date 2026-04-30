@@ -20,6 +20,7 @@ import {
   ClipboardList,
   LayoutDashboard,
   Droplets,
+  Linkedin,
 } from "lucide-react";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -223,6 +224,15 @@ function Navbar() {
             </a>
           ))}
           <a
+            href="https://www.linkedin.com/in/stephanie-leonenko-27580b406/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-stone-400 hover:text-teal-700 transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-4 h-4" />
+          </a>
+          <a
             href="/resume"
             className="text-sm border border-stone-300 text-stone-700 px-4 py-2 rounded-lg hover:bg-stone-100 transition-colors font-medium"
           >
@@ -257,6 +267,15 @@ function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://www.linkedin.com/in/stephanie-leonenko-27580b406/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="text-sm text-stone-600 hover:text-teal-700 font-medium flex items-center gap-2"
+          >
+            <Linkedin className="w-4 h-4" /> LinkedIn
+          </a>
           <a
             href="/resume"
             onClick={() => setOpen(false)}
@@ -649,6 +668,15 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <ObfuscatedEmail className="inline-flex items-center justify-center gap-2 bg-teal-700 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-800 transition-colors cursor-pointer border-0" />
               <ObfuscatedPhone className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-stone-50 transition-colors cursor-pointer bg-transparent" />
+              <a
+                href="https://www.linkedin.com/in/stephanie-leonenko-27580b406/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 border border-stone-300 text-stone-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-stone-50 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
             </div>
 
 
@@ -680,8 +708,17 @@ export default function Home() {
       {/* ── Footer ── */}
       <footer className="border-t border-stone-200 bg-stone-50 py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <span className="text-sm text-stone-500">Stephanie Leonenko</span>
+            <a
+              href="https://www.linkedin.com/in/stephanie-leonenko-27580b406/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stone-400 hover:text-teal-700 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-4 h-4" />
+            </a>
           </div>
           <p className="text-xs text-stone-400 font-mono">
             Healthcare Administration | BS SNHU (In Progress) | NYS CNA · PCT · BLS · Phlebotomist

@@ -26,7 +26,7 @@ export default function ResumePage() {
             <h1 className="text-[26px] font-bold text-stone-900 tracking-tight mb-0.5">Stephanie Leonenko</h1>
             <p className="text-sm font-semibold text-teal-700 mb-2">Healthcare Administration | Operations | Care Coordination</p>
             <p className="text-sm text-stone-600">
-              Commack, NY &nbsp;|&nbsp; stephanie@leonenko.me &nbsp;|&nbsp; (347) 975-1512
+              Commack, NY &nbsp;|&nbsp; stephanie@leonenko.me &nbsp;|&nbsp; (347) 975-1512 &nbsp;|&nbsp; linkedin.com/in/stephanie-leonenko-27580b406
             </p>
           </header>
 

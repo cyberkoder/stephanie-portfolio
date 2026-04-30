@@ -13,6 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
   title: "Stephanie Leonenko | Healthcare Administration",
   description:
     "Healthcare administration professional with 10+ years of clinical experience at Northwell Health. Pursuing BS Healthcare Administration at SNHU. NYS CNA, PCT, BLS, Phlebotomist. Based in Commack, New York.",
